@@ -1,0 +1,7 @@
+{
+  "name": "googledk",
+  "scripts": {
+    "dev": "servemon run",
+    "build": "servemon --build"
+  }
+}
