@@ -29,11 +29,11 @@ const history = document.getElementById("history");
 
 const searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || [];
 
-searchHistory.map((item) => {
+searchHistory.map((item, index) => {
   const li = document.createElement("li");
   li.classList.add("list-item");
   li.style.display = "none";
-  li.innerHTML = item;
+  li.innerHTML = `<a href="${item}">${index} <span style="color: var(--light)">${item}</span></a>`;
   history.appendChild(li);
 });
 
