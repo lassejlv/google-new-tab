@@ -197,3 +197,23 @@ input[type="text"] {
     margin-bottom: 10px;
   }
 }
+
+/* Footer */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  color: white;
+  cursor: pointer;
+  font-size: 1.3em;
+  padding: 12px;
+}
+
+footer p:hover {
+  color: rgb(155, 153, 153);
+}
