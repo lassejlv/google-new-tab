@@ -85,6 +85,11 @@ input[type="text"] {
 .navbar .avatar {
   border-radius: 50%;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar .avatar:hover {
+  transform: scale(1.2);
 }
 
 /* Search Area */
