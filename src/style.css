@@ -82,6 +82,11 @@ input[type="text"] {
   color: #999;
 }
 
+.navbar .avatar {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
 /* Search Area */
 
 .search-wrapper {
@@ -119,6 +124,11 @@ input[type="text"] {
 
 .search-wrapper button:focus {
   box-shadow: 0 0 0 2px var(--light);
+}
+
+.search-wrapper button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .search-wrapper .footer {
