@@ -129,7 +129,7 @@ input[type="text"] {
   filter: drop-shadow(0px 10px 30px var(--blue));
 }
 
-.search-wrapper h1 {
+.search-wrapper .logo {
   font-size: 3.5rem;
   user-select: none;
   color: white;
@@ -160,4 +160,29 @@ input[type="text"] {
 
 .search-wrapper .footer {
   color: lightgray;
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 480px) {
+  .search-wrapper .logo {
+    font-size: 2.5rem !important;
+  }
+
+  input[type="text"] {
+    padding: 8px 10px;
+    width: 15rem;
+  }
+
+  .search-wrapper button {
+    padding: 8px 10px;
+  }
+
+  .search-wrapper .field {
+    margin-bottom: 10px;
+  }
+
+  .search-wrapper .footer {
+    text-align: center;
+  }
 }
