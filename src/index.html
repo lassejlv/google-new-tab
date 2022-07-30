@@ -22,16 +22,19 @@
         <li onclick="r('https://www.google.dk/imghp')">Billeder</li>
       </ul>
 
-      <div class="logo"></div>
-
-      <div id="avatar"></div>
+      <div class="mode">
+        <button id="dark" class="dark"><i class="fa-solid fa-moon"></i></button>
+        <button id="light" class="light">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+      </div>
     </header>
 
     <section class="search-wrapper">
       <h1>Google Clone UI</h1>
 
       <form action="https://www.google.dk/search" method="get">
-        <div>
+        <div class="field">
           <input
             type="text"
             name="q"

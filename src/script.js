@@ -2,19 +2,6 @@ function r(url) {
   window.location.href = url;
 }
 
-// Dette laver et img tag med et billede, ved godt man kan gøre det nemere. Men bruger bare dette til at øve mig
-const avatar = document.getElementById("avatar");
-const avatar_url =
-  "https://lh3.googleusercontent.com/ogw/AOh-ky2OnpiTfl_LeMwq2EhUBGWgRhgO-mK40ivrQvge1w=s32-c-mo";
-
-avatar.innerHTML = `
-<img
-  src="${avatar_url}"
-  alt="Avatar"
-  class="avatar"
-/>
-`;
-
 // Validerer når brugeren søger.
 
 function searchField() {
@@ -26,4 +13,15 @@ function searchField() {
   } else {
     submit.disabled = false;
   }
+}
+
+// Dark Mode
+
+const darkButton = document.getElementById("dark");
+const lightButton = document.getElementById("light");
+
+if (localStorage.getItem("theme") == "dark") {
+  darkButton.style = "display: block !important";
+} else if (localStorage.getItem("theme") == "light") {
+  lightButton.style = "display: block !important";
 }

@@ -13,6 +13,7 @@ body {
 :root {
   --dark: #212125;
   --light: #eeeeee;
+  --yellow: rgb(246, 223, 74);
   --blue: rgb(92, 92, 228);
   --darker-blue: rgb(85, 85, 209);
 }
@@ -92,6 +93,23 @@ input[type="text"] {
   transform: scale(1.2);
 }
 
+.navbar .mode button {
+  background: none;
+  font-size: 1.5em;
+  margin-right: 2rem;
+  cursor: pointer;
+  border: none;
+  display: none;
+}
+
+.navbar .mode .dark {
+  color: var(--yellow);
+}
+
+.navbar .mode .light {
+  color: rgb(215, 215, 215);
+}
+
 /* Search Area */
 
 .search-wrapper {
@@ -105,6 +123,10 @@ input[type="text"] {
 
 .search-wrapper form {
   margin-top: 10px;
+}
+
+.search-wrapper .field {
+  filter: drop-shadow(0px 10px 30px var(--blue));
 }
 
 .search-wrapper h1 {
