@@ -13,6 +13,7 @@ body {
 :root {
   --dark: #212125;
   --light: #eeeeee;
+  --red: #ec4242;
   --yellow: rgb(246, 223, 74);
   --blue: rgb(92, 92, 228);
   --darker-blue: rgb(85, 85, 209);
@@ -77,18 +78,18 @@ input[type="text"] {
 }
 
 .navbar ul {
-  color: white;
   list-style: none;
   display: flex;
   margin-right: 4rem;
 }
 
-.navbar ul li {
+.navbar .item {
+  color: white;
   margin-left: 10px;
   cursor: pointer;
 }
 
-.navbar ul li:hover {
+.navbar .item:hover {
   text-decoration: underline;
   color: #999;
 }

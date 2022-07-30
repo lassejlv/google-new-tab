@@ -1,20 +1,3 @@
-function r(url) {
-  window.location.href = url;
-}
-
-// Validerer når brugeren søger.
-
-// function searchField() {
-//   const searchField = document.getElementById("search-field").value;
-//   const submit = document.getElementById("submit");
-
-//   if (searchField.length == 0) {
-//     submit.disabled = true;
-//   } else {
-//     submit.disabled = false;
-//   }
-// }
-
 const form = document.getElementById("form");
 
 form.addEventListener("submit", (e) => {
@@ -42,10 +25,14 @@ const button = document.getElementById("search-history-button");
 button.addEventListener("click", () => {
   const li = document.querySelectorAll(".list-item");
 
-  li.forEach((item) => {
-    item.style.display = "block";
-    button.style.display = "none";
-  });
+  if (li.length == 0) {
+    alert("No search history, search something first!");
+  } else {
+    li.forEach((item) => {
+      item.style.display = "block";
+      button.style.display = "none";
+    });
+  }
 });
 
 // Dark Mode
