@@ -28,6 +28,12 @@ if (localStorage.getItem("theme") == "dark") {
   darkButton.style = "display: block !important";
 }
 
+if (localStorage.getItem("theme") == "dark") {
+  document.body.classList.remove("light-mode");
+} else if (localStorage.getItem("theme") == "light") {
+  document.body.classList.add("light-mode");
+}
+
 darkButton.addEventListener("click", () => {
   localStorage.setItem("theme", "light");
   window.location.reload();

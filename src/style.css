@@ -49,6 +49,11 @@ input[type="text"] {
   margin-bottom: 1rem;
 }
 
+/* Modes */
+.light-mode {
+  background-color: var(--light);
+}
+
 /* Navbar */
 
 .navbar {
@@ -59,6 +64,11 @@ input[type="text"] {
   box-sizing: border-box;
   padding: 10px;
   padding-top: 15px;
+}
+
+/* Light Mode */
+.light-mode .navbar ul {
+  color: var(--dark) !important;
 }
 
 .navbar h1 {
@@ -107,7 +117,7 @@ input[type="text"] {
 }
 
 .navbar .mode .light {
-  color: rgb(215, 215, 215);
+  color: #444;
 }
 
 /* Search Area */
@@ -119,6 +129,15 @@ input[type="text"] {
   align-items: center;
   justify-content: center;
   height: 70vh;
+}
+
+/* Light Mode */
+.light-mode .search-wrapper .logo {
+  color: var(--dark);
+}
+
+.light-mode .search-wrapper .footer {
+  color: gray;
 }
 
 .search-wrapper form {
