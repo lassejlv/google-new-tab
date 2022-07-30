@@ -33,7 +33,7 @@
     <section class="search-wrapper">
       <h1 class="logo">Google</h1>
 
-      <form action="https://www.google.com/search" method="get">
+      <form id="form" action="https://google.com/search">
         <div class="field">
           <input
             type="text"
@@ -43,18 +43,17 @@
             placeholder="Search on google..."
             required
           />
+
           <button type="submit" id="submit">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
       </form>
-    </section>
 
-    <footer>
-      <p onclick="r('https://github.com/lassv/google-new-tab')">
-        <i class="fa-brands fa-github"></i>
-      </p>
-    </footer>
+      <div id="history" class="history">
+        <button id="search-history-button">Search History</button>
+      </div>
+    </section>
 
     <script src="script.js"></script>
   </body>

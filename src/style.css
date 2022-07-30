@@ -128,7 +128,7 @@ input[type="text"] {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 75vh;
 }
 
 /* Light Mode */
@@ -198,22 +198,12 @@ input[type="text"] {
   }
 }
 
-/* Footer */
+/* History */
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+.search-wrapper .history {
+  margin-top: 2rem;
 }
 
-footer p {
-  color: white;
-  cursor: pointer;
-  font-size: 1.3em;
-  padding: 12px;
-}
-
-footer p:hover {
-  color: rgb(155, 153, 153);
+.search-wrapper .list-item {
+  color: rgb(92, 92, 228);
 }

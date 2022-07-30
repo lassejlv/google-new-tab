@@ -15,6 +15,39 @@ function r(url) {
 //   }
 // }
 
+const form = document.getElementById("form");
+
+form.addEventListener("submit", (e) => {
+  const searchQuery = document.getElementById("search-field").value;
+
+  const searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || [];
+  searchHistory.push(searchQuery);
+  localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
+});
+
+const history = document.getElementById("history");
+
+const searchHistory = JSON.parse(localStorage.getItem("searchHistory")) || [];
+
+searchHistory.map((item) => {
+  const li = document.createElement("li");
+  li.classList.add("list-item");
+  li.style.display = "none";
+  li.innerHTML = item;
+  history.appendChild(li);
+});
+
+const button = document.getElementById("search-history-button");
+
+button.addEventListener("click", () => {
+  const li = document.querySelectorAll(".list-item");
+
+  li.forEach((item) => {
+    item.style.display = "block";
+    button.style.display = "none";
+  });
+});
+
 // Dark Mode
 
 const darkButton = document.getElementById("dark");
