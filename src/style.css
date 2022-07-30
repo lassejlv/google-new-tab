@@ -208,3 +208,8 @@ input[type="text"] {
 .search-wrapper .list-item {
   color: rgb(92, 92, 228);
 }
+
+/* Light Mode */
+.light-mode .search-wrapper .list-item span {
+  color: var(--dark) !important;
+}
