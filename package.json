@@ -1,5 +1,5 @@
 {
-  "name": "googledk",
+  "name": "google-new-tab",
   "scripts": {
     "dev": "servemon run",
     "build": "servemon --build"
