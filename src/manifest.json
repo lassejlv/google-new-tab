@@ -1,0 +1,10 @@
+{
+  "manifest_version": 2,
+  "name": "Custom Tab Extension",
+  "version": "1.0",
+  "description": "This is a simple extension that adds a custom tab to the Chrome browser.",
+  "author": "Lasse Vestergaard",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}

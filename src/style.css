@@ -177,10 +177,6 @@ input[type="text"] {
   cursor: not-allowed;
 }
 
-.search-wrapper .footer {
-  color: lightgray;
-}
-
 /* Mobile View */
 
 @media screen and (max-width: 480px) {
@@ -199,9 +195,5 @@ input[type="text"] {
 
   .search-wrapper .field {
     margin-bottom: 10px;
-  }
-
-  .search-wrapper .footer {
-    text-align: center;
   }
 }

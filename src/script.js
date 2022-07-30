@@ -4,16 +4,16 @@ function r(url) {
 
 // Validerer når brugeren søger.
 
-function searchField() {
-  const searchField = document.getElementById("search-field").value;
-  const submit = document.getElementById("submit");
+// function searchField() {
+//   const searchField = document.getElementById("search-field").value;
+//   const submit = document.getElementById("submit");
 
-  if (searchField.length == 0) {
-    submit.disabled = true;
-  } else {
-    submit.disabled = false;
-  }
-}
+//   if (searchField.length == 0) {
+//     submit.disabled = true;
+//   } else {
+//     submit.disabled = false;
+//   }
+// }
 
 // Dark Mode
 

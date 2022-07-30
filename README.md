@@ -1,3 +1,3 @@
-## Simple UI af google
+## Google New Tab
 
-Har lavet en simple UI af google med en søge felt hvor den omdirigerer til google med det du skriver.
+Min egen google extension der kommer frem være gang man laver en ny tab.
