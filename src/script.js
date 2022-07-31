@@ -50,13 +50,13 @@ modalToogle.addEventListener("click", () => {
 
 const reset = document.getElementById("reset").addEventListener("click", () => {
   localStorage.clear();
-  location.reload();
+  window.location.reload();
 });
 const resetHistory = document
   .getElementById("reset-history")
   .addEventListener("click", () => {
     localStorage.removeItem("searchHistory");
-    location.reload();
+    window.location.reload();
   });
 
 const darkButton = document.getElementById("dark");
