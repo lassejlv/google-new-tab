@@ -59,6 +59,29 @@ const resetHistory = document
     window.location.reload();
   });
 
+const checkBox = document.getElementById("hideSearchHistory");
+
+if (localStorage.getItem("hideSearchHistory") == "true") {
+  document.getElementById("search-history-button").classList.add("hidden");
+  checkBox.checked = true;
+} else if (localStorage.getItem("hideSearchHistory") == "false") {
+  document.getElementById("search-history-button").classList.remove("hidden");
+  checkBox.checked = false;
+} else {
+  document.getElementById("search-history-button").classList.remove("hidden");
+  checkBox.checked = false;
+}
+
+checkBox.addEventListener("change", () => {
+  if (checkBox.checked) {
+    localStorage.setItem("hideSearchHistory", "true");
+    document.getElementById("search-history-button").classList.add("hidden");
+  } else {
+    localStorage.setItem("hideSearchHistory", "false");
+    document.getElementById("search-history-button").classList.remove("hidden");
+  }
+});
+
 const darkButton = document.getElementById("dark");
 const lightButton = document.getElementById("light");
 
