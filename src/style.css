@@ -41,7 +41,7 @@ img {
 
 input[type="text"] {
   outline: none;
-  width: 20rem;
+  width: 25rem;
   padding: 12px 20px;
   margin: 8px 0;
   border: none;
@@ -68,7 +68,7 @@ input[type="text"] {
 }
 
 /* Light Mode */
-.light-mode .navbar ul {
+.light-mode .navbar ul li .item {
   color: var(--dark) !important;
 }
 

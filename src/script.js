@@ -16,7 +16,7 @@ searchHistory.map((item, index) => {
   const li = document.createElement("li");
   li.classList.add("list-item");
   li.style.display = "none";
-  li.innerHTML = `<a href="${item}">${index} | <span style="color: var(--light)">${item}</span></a> <i id="delete-item" style="margin-left: 4px; color: var(--red); cursor: pointer;" class="fa-solid fa-trash fa-sm"></i>`;
+  li.innerHTML = `<a href="https://google.com/search?q=${item}">${index} | <span style="color: var(--light)">${item}</span></a> <i  onclick="deleteItem()" id="delete-item" style="margin-left: 4px; color: var(--red); cursor: pointer;" class="fa-solid fa-trash fa-sm"></i>`;
   history.appendChild(li);
 });
 
@@ -34,8 +34,6 @@ button.addEventListener("click", () => {
     });
   }
 });
-
-// Dark Mode
 
 const darkButton = document.getElementById("dark");
 const lightButton = document.getElementById("light");
