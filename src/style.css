@@ -14,6 +14,7 @@ body {
   --dark: #212125;
   --light: #eeeeee;
   --red: #ec4242;
+  --darker-red: #d33b3b;
   --yellow: rgb(246, 223, 74);
   --blue: rgb(92, 92, 228);
   --darker-blue: rgb(85, 85, 209);
@@ -48,6 +49,18 @@ input[type="text"] {
   box-sizing: border-box;
   border-radius: 5px;
   margin-bottom: 1rem;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #444;
+  margin: 1rem 0;
+}
+
+/* Custom classes */
+.hidden {
+  display: none !important;
 }
 
 /* Modes */
@@ -178,6 +191,95 @@ input[type="text"] {
   cursor: not-allowed;
 }
 
+/* Modal (for options) */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal .modal-content {
+  width: 50%;
+  height: 50%;
+  background: var(--light);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .modal-content form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .modal-content form .option {
+  padding: 10px;
+  border: 1px solid var(--dark);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.modal .modal-content form .option label {
+  color: green;
+  font-size: 0.7rem;
+}
+
+.modal .modal-content form .option button {
+  background: var(--red);
+  color: white;
+  padding: 5px 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.modal .modal-content form .option button:hover {
+  background-color: var(--darker-red);
+}
+
+.modal .modal-content h2 {
+  font-size: 2rem;
+}
+
+.modal .modal-content p {
+  font-size: 0.9rem;
+  color: lightslategrey;
+  margin-bottom: 1rem;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.modal-footer button {
+  background: var(--red);
+  padding: 12px 12px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.modal-footer button:hover {
+  background-color: var(--darker-red);
+}
+
 /* Mobile View */
 
 @media screen and (max-width: 480px) {
@@ -197,6 +299,11 @@ input[type="text"] {
   .search-wrapper .field {
     margin-bottom: 10px;
   }
+
+  .modal .modal-content {
+    width: 80%;
+    height: 80%;
+  }
 }
 
 /* History */
@@ -211,5 +318,30 @@ input[type="text"] {
 
 /* Light Mode */
 .light-mode .search-wrapper .list-item span {
+  color: var(--dark) !important;
+}
+
+/* Footer */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 1.2em;
+  width: 100%;
+  color: white !important;
+}
+
+.footer button {
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+/* Light Mode */
+
+.light-mode .footer button {
   color: var(--dark) !important;
 }

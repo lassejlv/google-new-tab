@@ -57,6 +57,38 @@
       </div>
     </section>
 
+    <div id="options-modal" class="hidden modal">
+      <div class="modal-content">
+        <h2>Options</h2>
+        <p>Here is some options, that you can configure.</p>
+
+        <form>
+          <div class="option">
+            <label for="reset">Reset <b>Google New Tab</b></label>
+            <button id="reset">
+              <i class="fa-solid fa-arrow-rotate-right"></i>
+            </button>
+          </div>
+          <div class="option">
+            <label for="reset">Delete <b>Search History</b></label>
+            <button id="reset-history">
+              <i class="fa-solid fa-trash"></i>
+            </button>
+          </div>
+        </form>
+
+        <hr />
+
+        <div class="modal-footer">
+          <button id="close-modal">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <button id="modal-toogle"><i class="fa-solid fa-gear fa-lg"></i></button>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
